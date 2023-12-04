@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Programa de Darío -->
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Second"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_sectionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/section_text"
+        android:textStyle="bold"
+        android:textColor="@color/dark_yellow"
+        android:textSize="40sp"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/phone_description"
+        android:src="@drawable/baseline_big_phone_24" />
+
+    <TextView
+        android:id="@+id/tv_callEmergenciesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_llamar_numero"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_volver"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Programa de Darío -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ProgressBar
+        android:id="@+id/pb_progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="?android:attr/progressBarStyle"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/medium_turquoise"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/main_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/heavy_modified"
+            android:layout_marginVertical="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_identificacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/identificacion"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/tv_saludo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estoy programando"
+            android:textSize="35sp"
+            android:textColor="@color/dark_yellow"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_margin="30dp"
+
+        >
+        <TableRow>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/btn_goto_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_phone_24"
+                    android:contentDescription="@string/phone_description"
+                    android:padding="10dp"
+                    app:backgroundTint="@null"
+                    android:background="@drawable/button_style"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_callText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_llamar"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btn_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_alarm_24"
+                    android:contentDescription="@string/alarm_description"
+                    android:padding="10dp"
+                    app:backgroundTint="@null"
+                    android:background="@drawable/button_style"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_alarmText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_alarma"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <ImageButton
+                    android:id="@+id/btn_web"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_public_24"
+                    android:contentDescription="@string/web_description"
+                    android:padding="10dp"
+                    app:backgroundTint="@null"
+                    android:background="@drawable/button_style"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_webText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_web"/>
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/btn_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_email_24"
+                    android:contentDescription="@string/mail_description"
+                    app:backgroundTint="@null"
+                    android:padding="10dp"
+                    android:background="@drawable/button_style"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_mail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_correo"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/btn_dado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dado_icon"
+                    android:contentDescription="@string/dado_description"
+                    app:backgroundTint="@null"
+                    android:padding="10dp"
+                    android:background="@drawable/button_style"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_diceText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_dice"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/btn_chistes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/speaker_icon"
+                    android:contentDescription="@string/chistes_description"
+                    app:backgroundTint="@null"
+                    android:padding="10dp"
+                    android:background="@drawable/button_style"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_chistesText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_chistes"/>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/bottom_style"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/tv_jugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_jugar"
+            android:textSize="30sp"
+            android:textColor="@color/dark_yellow"
+            />
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/tf2_logo"
+            />
+    </LinearLayout>
+</LinearLayout>

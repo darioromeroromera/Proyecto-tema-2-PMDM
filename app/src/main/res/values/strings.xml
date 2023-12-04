@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Dados y Chistes</string>
+    <string name="main_activity_text">App de Darío</string>
+    <string name="phone_description">Icono de teléfono móvil</string>
+    <string name="alarm_description">Icono de alarma</string>
+    <string name="web_description">Icono web</string>
+    <string name="mail_description">Icono correo</string>
+    <string name="texto_llamar">Llamar</string>
+    <string name="texto_alarma">Alarma</string>
+    <string name="texto_web">Web</string>
+    <string name="texto_correo">Correo</string>
+    <string name="section_text">Sección de llamada</string>
+    <string name="texto_llamar_numero">Llamar a el número de Darío</string>
+    <string name="texto_volver">Volver</string>
+    <string name="identificacion">Soy Darío</string>
+    <string name="dado_description">Icono dado</string>
+    <string name="chistes_description">Icono chistes</string>
+    <string name="texto_dice">Dados</string>
+    <string name="texto_chistes">Chistes</string>
+    <string name="texto_jugar">Voy a jugar</string>
+    <string name="texto_contar_chiste">Escuchar chiste aleatorio</string>
+    <string name="gustado">Me ha gustado</string>
+    <string name="no_gustado">No me ha gustado</string>
+    <string name="gustado_pregunta">¿Te ha gustado el chiste?</string>
+    <string name="introduce_nombre">Introduce tu nombre:</string>
+    <string name="tiempo_tiradas">Tiempo entre tiradas:</string>
+    <string name="long_list">Utilizar lista larga</string>
+    <string name="continuar">Continuar</string>
+</resources>
